@@ -432,15 +432,15 @@ class CPU:
     # Force break
     def BRK(self, instruction: Instruction, data: int):
         self.PC += 2
-        # push PC to stack
+        # Push PC to stack
         self.stack_push((self.PC >> 8) & 0xFF)
         self.stack_push(self.PC & 0xFF)
-        # push status to stack
+        # Push status to stack
         self.B = True
         self.stack_push(self.status)
         self.B = False
         self.I = True
-        # set PC to reset vector
+        # Set PC to reset vector
         self.PC = (self.read_memory(IRQ_BRK_VECTOR, MemMode.ABSOLUTE)) | \
                   (self.read_memory(IRQ_BRK_VECTOR + 1, MemMode.ABSOLUTE) << 8)
         self.jumped = True
@@ -585,7 +585,7 @@ class CPU:
     def PHA(self, instruction: Instruction, data: int):
         self.stack_push(self.A)
 
-    # push status
+    # Push status
     def PHP(self, instruction: Instruction, data: int):
         # https://nesdev.org/the%20'B'%20flag%20&%20BRK%20instruction.txt
         self.B = True

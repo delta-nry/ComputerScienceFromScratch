@@ -67,14 +67,14 @@ class VM:
         # Index Register
         self.i = 0
         # Program Counter
-        # starts at 0x200 because addresses below that were
+        # Starts at 0x200 because addresses below that were
         # used for the VM itself in the original CHIP-8 machines
         self.pc = 0x200
         # Memory - the standard 4k on the original CHIP-8 machines
         self.ram = array('B', [0] * RAM_SIZE)
-        # load the font set into the first 80 bytes
+        # Load the font set into the first 80 bytes
         self.ram[0:len(FONT_SET)] = array('B', FONT_SET)
-        # copy program into ram starting at byte 512 by convention
+        # Copy program into ram starting at byte 512 by convention
         self.ram[512:(512 + len(program_data))] = array('B', program_data)
         # Stack - in real hardware this is typically limited to
         # 12 or 16 PC addresses for jumps, but since we're on modern hardware,

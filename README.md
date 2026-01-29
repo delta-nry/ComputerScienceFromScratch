@@ -1,16 +1,22 @@
 # Computer Science from Scratch
 
-This repository contains all of the source code for the book *[Computer Science from Scratch: Building Interpreters, Art, Emulators and ML in Python](https://nostarch.com/computer-science-from-scratch)* by [David Kopec](https://davekopec.com) and published by No Starch Press. The book, intended for intermediate to advanced Python programmers, features 7 projects of varying complexity from the realm of interpreters, emulators, computer art, and simple machine learning. In the table below is a description of the 7 projects and further down in this README there are directions for running (and testing) each of them. The projects are compatible with Python 3.12 and above.
+<img align="left" src="README_images/ComputerScienceFromScratchCover.jpg" alt="Computer Science from Scratch Cover" height="200">
+
+This repository contains all of the source code for the book *[Computer Science from Scratch: Building Interpreters, Art, Emulators and ML in Python](https://nostarch.com/computer-science-from-scratch)* by [David Kopec](https://davekopec.com) and published by No Starch Press. The book, intended for intermediate to advanced Python programmers, features 7 projects of varying complexity from the realm of interpreters, emulators, computer art, and simple machine learning.
+
+The projects are compatible with Python 3.12 and above. You can find out more about the book at [computersciencefromscratch.com](https://computersciencefromscratch.com)
+
+In the table below is a description of the 7 projects and further down in this README there are directions for running (and testing) each of them. 
 
 | Project       | Chapter | Section                       | Description                                                                                                                                                              |
 |---------------|---------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Brainfuck](#brainfuck-chapter-1)     | 1       | Interpreters                  | An interpreter for the one of the simplest possible programming languages, Brainfuck.                                                                                    |
-| [NanoBASIC](#nanobasic-chapter-2)     | 2       | Interpreters                  | An interpreter for Nano BASIC, a dialect of Tiny BASIC—a programming language that was used during the personal computer revolution.                                     |
-| [RetroDither](#retrodither-chapter-3)   | 3       | Computer Art                  | A program that converts modern photos for display on a classic 1980s Mac by performing 1-bit (black & white) Atkinson dithering and converting them to MacPaint format.  |
-| [Impressionist](#impressionist-chapter-4) | 4       | Computer Art                  | Impressionist uses a simple stochastic hill climbing algorithm to create abstract art from photographs that (sometimes) looks like the work of an impressionist painter. |
-| [Chip8](#chip8-chapter-5)         | 5       | Emulators                     | An implementation of the CHIP-8 virtual machine that can play all of the 1970s games that were released for CHIP-8.                                                      |
-| [NESEmulator](#nesemulator-chapter-6)   | 6       | Emulators                     | The simplest possible NES emulator with support for playing real games but lacking sound, performance, compatibility with most mappers, and several other features.      |
-| [KNN](#knn-chapters-7--8)           | 7 & 8   | Super Simple Machine Learning | You draw a digit and the program can interpret your drawing (KNN classification) and/or complete it (KNN regression).                                                    |
+| [Brainfuck](#brainfuck-chapter-1)  <img src="README_images/brainfuck.png" alt="Brainfuck Image" height="60">   | 1       | Interpreters                  | An interpreter for the one of the simplest possible programming languages, Brainfuck.                                                                                    |
+| [NanoBASIC](#nanobasic-chapter-2)  <img src="README_images/nanobasic.png" alt="NanoBASIC Image" height="60">   | 2       | Interpreters                  | An interpreter for Nano BASIC, a dialect of Tiny BASIC—a programming language that was used during the personal computer revolution.                                     |
+| [RetroDither](#retrodither-chapter-3) <img src="README_images/retrodither.png" alt="Retro Dither Image" height="60">  | 3       | Computer Art                  | A program that converts modern photos for display on a classic 1980s Mac by performing 1-bit (black & white) Atkinson dithering and converting them to MacPaint format.  |
+| [Impressionist](#impressionist-chapter-4)  <img src="README_images/impressionist.png" alt="Impressionist Image" height="60"> | 4       | Computer Art                  | Impressionist uses a simple stochastic hill climbing algorithm to create abstract art from photographs that (sometimes) looks like the work of an impressionist painter. |
+| [Chip8](#chip8-chapter-5)   <img src="README_images/chip8.png" alt="Chip8 Image" height="60">      | 5       | Emulators                     | An implementation of the CHIP-8 virtual machine that can play all of the 1970s games that were released for CHIP-8.                                                      |
+| [NESEmulator](#nesemulator-chapter-6) <img src="README_images/nes.png" alt="NES Image" height="100">    | 6      | Emulators                     | The simplest possible NES emulator with support for playing real games but lacking sound, performance, compatibility with most mappers, and several other features.      |
+| [KNN](#knn-chapters-7--8)      <img src="README_images/knn.png" alt="KNN Image" height="100">     | 7 & 8   | Super Simple Machine Learning | You draw a digit and the program can interpret your drawing (KNN classification) and/or complete it (KNN regression).                                                    |
 
 ## Get the Book
 
@@ -197,4 +203,4 @@ The code in this repository uses the latest type hinting features in Python 3.12
 
 ## Authorship and License
 
-The code in this repository is Copyright 2024 David Kopec and released under the terms of the Apache License 2.0. That means you can reuse the code, but you must give credit to David Kopec. Please read the license for details and other requirements. 
+The code in this repository is Copyright 2021-2025 David Kopec and released under the terms of the Apache License 2.0. That means you can reuse the code, but you must give credit to David Kopec. Please read the license for details and other requirements. 

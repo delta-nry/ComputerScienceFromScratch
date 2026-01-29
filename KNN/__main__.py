@@ -58,7 +58,8 @@ def run():
                 elif key_name == "p":  # predict what the digit should look like
                     pixels = digit_pixels.transpose((1, 0, 2))[:, :, 0].flatten() * P_TO_D
                     predicted_pixels = digits_knn.predict_array(K, Digit("", pixels), "pixels")
-                    predicted_pixels = predicted_pixels.reshape((PIXEL_HEIGHT, PIXEL_WIDTH)).transpose((1, 0)) * D_TO_P
+                    predicted_pixels = predicted_pixels.reshape((
+                        PIXEL_HEIGHT, PIXEL_WIDTH)).transpose((1, 0)) * D_TO_P
                     digit_pixels = np.stack((predicted_pixels, predicted_pixels,
                                              predicted_pixels), axis=2)
             # Handle mouse events
