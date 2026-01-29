@@ -20,7 +20,9 @@ In the table below is a description of the 7 projects and further down in this R
 
 ## Get the Book
 
-[The book is available now, in its entirety, from No Starch Press.](https://nostarch.com/computer-science-from-scratch) Although this is technically an "Early Access" eBook edition, it is essentially the same exact book as will be published by No Starch Press in print form in mid 2025. You can choose to either purchase the eBook now, or pre-purchase the print book which will also give you immediate access to the eBook.
+- [Get the print or eBook from the publisher, No Starch Press](https://nostarch.com/computer-science-from-scratch)
+- [Get the print book from Amazon](https://amzn.to/4p7zrJ2)
+- [Get the Kindle edition from Amazon](https://amzn.to/4p59oSH)
 
 ## Running and Testing Each Project
 
