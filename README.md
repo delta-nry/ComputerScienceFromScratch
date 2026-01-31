@@ -4,7 +4,7 @@
 
 This repository contains all of the source code for the book *[Computer Science from Scratch: Building Interpreters, Art, Emulators and ML in Python](https://nostarch.com/computer-science-from-scratch)* by [David Kopec](https://davekopec.com) and published by No Starch Press. The book, intended for intermediate to advanced Python programmers, features 7 projects of varying complexity from the realm of interpreters, emulators, computer art, and simple machine learning.
 
-The projects are compatible with Python 3.12 and above. You can find out more about the book at [computersciencefromscratch.com](https://computersciencefromscratch.com)
+The projects are compatible with Python 3.12 and above. All of them are working code that you can run. But the real value comes from combining the projects with the detailed explanations and background that is in the book. You don't just want to read their code, you want to understand how they work. You can find out more about the book at [computersciencefromscratch.com](https://computersciencefromscratch.com)
 
 In the table below is a description of the 7 projects and further down in this README there are directions for running (and testing) each of them. 
 
