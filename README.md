@@ -1,3 +1,33 @@
+This repository contains solutions that I implemented for the exercises in the
+book "Computer Science from Scratch."
+
+## Solutions for Chapter 1
+
+### Brainfuck (Cached)
+
+The [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) interpreter
+re-implemented to cache bracket locations to help improve the interpreter's
+performance and is a key step in implementing my Brainfuck to Python transpiler.
+
+#### Requirements
+
+No External Dependencies
+
+#### Running
+
+`python -m BrainfuckCached <your_file_name>`
+
+For example:
+
+`python -m BrainfuckCached BrainfuckCached/Examples/beer.bf`
+
+#### Testing
+
+`python -m tests.test_brainfuck_cached`
+
+This repository is a fork of the repository associated with this book, with its
+original README text copied verbatim below:
+
 # Computer Science from Scratch
 
 <img align="left" src="README_images/ComputerScienceFromScratchCover.jpg" alt="Computer Science from Scratch Cover" height="200">
