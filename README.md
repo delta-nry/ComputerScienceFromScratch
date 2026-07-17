@@ -25,6 +25,29 @@ For example:
 
 `python -m tests.test_brainfuck_cached`
 
+### Brainfuck to Python Transpiler
+
+The Brainfuck to Python transpiler.
+
+#### Requirements
+
+No External Dependencies
+
+#### Running
+
+`python -m BrainfuckToPython <your_file_name>`
+
+For example:
+
+`python -m BrainfuckToPython BrainfuckToPython/Examples/beer.bf`
+
+The resulting Python file is saved to the current working directory
+with the file name `out.py`.
+
+#### Testing
+
+`python -m tests.test_brainfuck_to_python`
+
 This repository is a fork of the repository associated with this book, with its
 original README text copied verbatim below:
 
