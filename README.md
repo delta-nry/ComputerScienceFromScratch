@@ -42,7 +42,7 @@ For example:
 `python -m BrainfuckToPython BrainfuckToPython/Examples/beer.bf`
 
 The resulting Python file is saved to the current working directory
-with the file name `out.py`.
+with the filename `out.py`.
 
 #### Testing
 
