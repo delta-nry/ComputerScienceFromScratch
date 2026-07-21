@@ -49,7 +49,8 @@ with the filename `out.py`.
 `python -m tests.test_brainfuck_to_python`
 
 This repository is a fork of the repository associated with this book, with its
-original README text copied verbatim below:
+original README text copied verbatim below minus the "Authorship and License"
+section:
 
 # Computer Science from Scratch
 
@@ -258,6 +259,3 @@ Then use the key commands "c" to classify, "p" to predict, and "e" to erase.
 ## Type Hints
 The code in this repository uses the latest type hinting features in Python 3.12 and above. If you are using an older version of Python, you may be able to run the code by removing some of the type hints, but no support is offered for that endeavor. All the type hints in the source code were checked using [Pyright](https://github.com/microsoft/pyright).
 
-## Authorship and License
-
-The code in this repository is Copyright 2021-2025 David Kopec and released under the terms of the Apache License 2.0. That means you can reuse the code, but you must give credit to David Kopec. Please read the license for details and other requirements. 
