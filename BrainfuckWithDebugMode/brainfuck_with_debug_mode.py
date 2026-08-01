@@ -108,28 +108,29 @@ class Brainfuck:
         do_step = True
         while instruction_index < len(self.source_code):
             if do_step:
+                # Print the interpreter's state
+                print("\n---\n")
+                print(f"Cell index: {cell_index}")
+                print(f"Instruction index: {instruction_index}")
+                print("Cells:")
+                print("[")
+                in_zeros = False
+                for index, cell in enumerate(cells):
+                    if cell != 0:
+                        print(f"Cell {index}: {cell}")
+                        in_zeros = False
+                    else:
+                        if not in_zeros:
+                            print("...")
+                            in_zeros = True
+                        else:
+                            continue
+                print("]")
                 while True:
                     result = input(
                             "Enter \"s\" to step or \"c\" to continue: ")
                     match result:
                         case "s":
-                            # Print the interpreter's state
-                            print(f"\n\nCell index: {cell_index}")
-                            print(f"Instruction index: {instruction_index}")
-                            print("Cells:")
-                            print("[")
-                            in_zeros = False
-                            for index, cell in enumerate(cells):
-                                if cell != 0:
-                                    print(f"Cell {index}: {cell}")
-                                    in_zeros = False
-                                else:
-                                    if not in_zeros:
-                                        print("...")
-                                        in_zeros = True
-                                    else:
-                                        continue
-                            print("]")
                             break
                         case "c":
                             do_step = False
