@@ -63,7 +63,9 @@ No External Dependencies
 To run with debug mode enabled:
 
 `python -m BrainfuckWithDebugMode -d <your_file_name>`
+
 or
+
 `python -m BrainfuckWithDebugMode --debug <your_file_name>`
 
 For example:
