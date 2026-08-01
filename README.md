@@ -7,7 +7,8 @@ book "Computer Science from Scratch."
 
 The [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) interpreter
 re-implemented to cache bracket locations to help improve the interpreter's
-performance and is a key step in implementing my Brainfuck to Python transpiler.
+performance and is a key step in implementing my Brainfuck to Python
+transpiler.
 
 #### Requirements
 
@@ -47,6 +48,35 @@ with the filename `out.py`.
 #### Testing
 
 `python -m tests.test_brainfuck_to_python`
+
+### Brainfuck (Debug Mode)
+
+The Brainfuck interpreter implemented with both bracket location caching and a
+debug mode.
+
+#### Requirements
+
+No External Dependencies
+
+#### Running
+
+To run with debug mode enabled:
+
+`python -m BrainfuckWithDebugMode -d <your_file_name>`
+or
+`python -m BrainfuckWithDebugMode --debug <your_file_name>`
+
+For example:
+
+`python -m BrainfuckWithDebugMode -d BrainfuckWithDebugMode/Examples/beer.bf`
+
+To run without debug mode:
+
+`python -m BrainfuckWithDebugMode <your_file_name>`
+
+For example:
+
+`python -m BrainfuckWithDebugMode BrainfuckWithDebugMode/Examples/beer.bf`
 
 This repository is a fork of the repository associated with this book, with its
 original README text copied verbatim below minus the "Authorship and License"
