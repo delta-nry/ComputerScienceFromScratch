@@ -80,6 +80,10 @@ For example:
 
 `python -m BrainfuckWithDebugMode BrainfuckWithDebugMode/Examples/beer.bf`
 
+#### Testing
+
+`python -m tests.test_brainfuck_with_debug_mode`
+
 This repository is a fork of the repository associated with this book, with its
 original README text copied verbatim below minus the "Authorship and License"
 section:
