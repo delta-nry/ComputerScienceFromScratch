@@ -96,6 +96,12 @@ class NanoBASICTestCase(unittest.TestCase):
         expected = "7\n"
         self.assertEqual(program_output, expected)
 
+    def test_case_insensitive_variables(self):
+        program_output = \
+                run(self.example_folder / "case_insensitive_variables.bas")
+        expected = "10\n10\n10\n10\n"
+        self.assertEqual(program_output, expected)
+
 
 if __name__ == "__main__":
     unittest.main()
