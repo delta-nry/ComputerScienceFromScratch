@@ -102,6 +102,12 @@ class NanoBASICTestCase(unittest.TestCase):
         expected = "10\n10\n10\n10\n"
         self.assertEqual(program_output, expected)
 
+    def test_print_item_list(self):
+        program_output = \
+                run(self.example_folder / "print_item_list.bas")
+        expected = "1 plus 1 is\t2\tand 2 times 3 is\t6\n"
+        self.assertEqual(program_output, expected)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -55,7 +55,10 @@ class TokenType(Enum):
     CLOSE_PAREN = (r'\)', False)
     VARIABLE = (r'[A-Za-z_]+', True)
     NUMBER = (r'-?[0-9]+', True)
-    STRING = (r'".*"', True)
+    # The `STRING` regexp means "double quotes surrounding zero or
+    # more characters that are not backslashes or double quotes,
+    # or a backslash followed by a double quote."
+    STRING = (r'"(?:[^\\"]|\\")*"', True)
 
     def __init__(self, pattern: str, has_associated_value: bool):
         self.pattern = pattern
@@ -96,7 +99,7 @@ def tokenize(text_file: TextIO) -> list[Token]:
                             elif possibility is TokenType.VARIABLE:
                                 associated_value = found.group()
                             elif possibility is TokenType.STRING:
-                                # Remove quote characters
+                                # Remove outer quote characters
                                 associated_value = found.group(0)[1:-1]
                         tokens.append(Token(possibility, line_num, col_start,
                                             col_end, associated_value))
