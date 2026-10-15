@@ -1,0 +1,8 @@
+10 LET A = 3
+20 LET a = 4
+30 LET bCdE = 5
+40 LET BcDe = 6
+50 PRINT A + BcDe
+60 PRINT a + BcDe
+70 PRINT A + bCdE
+80 PRINT a + bCdE
