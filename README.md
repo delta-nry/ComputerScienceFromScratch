@@ -84,6 +84,32 @@ For example:
 
 `python -m tests.test_brainfuck_with_debug_mode`
 
+## Solutions for Chapter 2
+
+### NanoBASIC (Fixed)
+
+An interpreter for a very simple dialect of BASIC based on
+[Tiny BASIC](https://en.wikipedia.org/wiki/Tiny_BASIC). This version fixes
+case-insensitive variable names and `PRINT` statements with item lists not
+working properly in the original implementation.
+
+#### Requirements
+
+No External Dependencies
+
+#### Running
+
+`python -m NanoBASICFixed <your_file_name>`
+
+For example:
+
+`python -m NanoBASICFixed NanoBASICFixed/Examples/fib.bas`
+
+#### Testing
+
+`python -m tests.test_nanobasic_fixed`
+
+
 This repository is a fork of the repository associated with this book, with its
 original README text copied verbatim below minus the "Authorship and License"
 section:
