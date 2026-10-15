@@ -84,6 +84,28 @@ For example:
 
 `python -m tests.test_brainfuck_with_debug_mode`
 
+## Solutions for Chapter 2
+
+### NanoBASIC (Exercise 1)
+
+Adds support for escaped double-quotes in strings to NanoBASIC (Fixed).
+
+#### Requirements
+
+No External Dependencies
+
+#### Running
+
+`python -m NanoBASICExercise1 <your_file_name>`
+
+For example:
+
+`python -m NanoBASICExercise1 NanoBASICExercise1/Examples/fib.bas`
+
+#### Testing
+
+`python -m tests.test_nanobasic_exercise_1`
+
 This repository is a fork of the repository associated with this book, with its
 original README text copied verbatim below minus the "Authorship and License"
 section:
