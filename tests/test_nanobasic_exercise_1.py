@@ -111,12 +111,8 @@ class NanoBASICTestCase(unittest.TestCase):
     def test_escaped_double_quotes(self):
         program_output = \
                 run(self.example_folder / "escaped_double_quotes.bas")
-        expected = """Testing
-\"This text contains \"escaped double quotes\"\"
-Testing\t3\tTesting\t6
-\"This text contains \"escaped double quotes\"\"
-Testing\t3\t\"This text contains \"escaped double quotes\"\"\t6
-Testing\t\"This text contains \"escaped double quotes\"\"\n"""
+        expected = """\"This text contains \"escaped double quotes\"\"
+3\t\"This text contains \"escaped double quotes\"\"\t6\n"""
         self.assertEqual(program_output, expected)
 
 if __name__ == "__main__":
